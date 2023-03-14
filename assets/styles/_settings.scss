@@ -18,6 +18,8 @@ $font3: Roboto, serif;
 $white:#eee;
 $black:#21201e;;
 $color1:rgb(166, 114, 69);
+$grey: rgb(182, 182, 182);
+
 
 @mixin childCenter {
     display: flex;
@@ -39,6 +41,12 @@ $color1:rgb(166, 114, 69);
 
 li {
     list-style: none;
+}
+
+a,
+a:visited{
+    text-decoration: none;
+    color: $white;
 }
 
 body {

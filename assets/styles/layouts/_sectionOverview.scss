@@ -1,0 +1,45 @@
+.section_Overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: $white;
+
+    .part_Left{
+        margin: 15px;
+        border: 1px dashed $color1;
+        padding: 30px 15px;
+
+        h2{
+            color: $color1;
+            font-family: $font1;
+            font-weight: 500;
+            font-size: 2rem;
+        }
+        h3{
+            font-size: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: -12px;
+            font-family: $font2;
+        }
+        img{
+            margin: 26px;
+        }
+        img:nth-of-type(2){
+            height: 70px;
+            border-radius: 150px;
+            margin-bottom: 8px;
+        }
+        
+        h4{
+            font-weight: 100;
+        }
+        h5{
+            text-transform: uppercase;
+            color: rgba(128, 128, 128, 0.629);
+        }
+    }
+    .part_Right{
+        background: url(../images/store-01.jpg) center/cover;
+    }
+    
+}
