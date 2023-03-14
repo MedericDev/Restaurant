@@ -31,11 +31,13 @@
         }
         
         h4{
-            font-weight: 100;
+            font-weight: 700;
+            font-size: 1rem;
         }
         h5{
             text-transform: uppercase;
-            color: rgba(128, 128, 128, 0.629);
+            font-size: .7rem;
+            color: $grey;
         }
     }
     .part_Right{

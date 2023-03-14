@@ -139,11 +139,13 @@ header .header_Texte img {
   margin-bottom: 8px;
 }
 .section_Overview .part_Left h4 {
-  font-weight: 100;
+  font-weight: 700;
+  font-size: 1rem;
 }
 .section_Overview .part_Left h5 {
   text-transform: uppercase;
-  color: rgba(128, 128, 128, 0.629);
+  font-size: 0.7rem;
+  color: rgb(182, 182, 182);
 }
 .section_Overview .part_Right {
   background: url(../images/store-01.jpg) center/cover;
