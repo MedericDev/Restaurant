@@ -5,6 +5,10 @@
     display: grid;
     grid-template-columns: 30% 70%;
 
+    @media screen and(max-width:1010px){
+        display: none;
+    }
+
     h3{
         color: $color1;
         font-family: $font1;
@@ -23,6 +27,7 @@
         background: #000;
         color: $white;
 
+        
         > div{
             border: 1px dashed $color1;
             margin: 20px;
