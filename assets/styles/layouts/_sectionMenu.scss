@@ -26,12 +26,16 @@
         margin:30px auto;
         color: $white;
         width: 50%;
-        min-width: 500px;
+        min-width: 300px;
 
+        @media screen and (max-width: 550px){
+            min-width: none;
+          }
 
         li {
         padding-bottom: 8px;
         border-bottom: 1px solid $grey;
+
         }
     }
 

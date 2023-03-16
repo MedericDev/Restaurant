@@ -200,7 +200,12 @@ header .header_Texte img {
   margin: 30px auto;
   color: #eee;
   width: 50%;
-  min-width: 500px;
+  min-width: 300px;
+}
+@media screen and (max-width: 550px) {
+  .section_Menu ul {
+    min-width: none;
+  }
 }
 .section_Menu ul li {
   padding-bottom: 8px;
