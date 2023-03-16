@@ -325,6 +325,10 @@ header .header_Texte img {
   transform: translateX(3px);
 }
 
+.section_Events {
+  max-width: 1050px;
+  margin: 30px auto;
+}
 .section_Events h3 {
   color: rgb(166, 114, 69);
   font-family: Allura, cursive;
@@ -347,9 +351,7 @@ header .header_Texte img {
   display: grid;
   grid-template-columns: 58% 42%;
   grid-template-areas: "a b" "c b";
-  max-width: 1000px;
-  margin: 30px auto;
-  gap: 20px;
+  gap: 10px;
 }
 .section_Events .events .grid1 {
   grid-area: c;
@@ -447,4 +449,54 @@ header .header_Texte img {
   text-transform: uppercase;
   padding-bottom: 40px;
   font-weight: 600;
+}
+
+.footer {
+  position: relative;
+  margin-top: 150px;
+}
+.footer::after {
+  content: "";
+  position: absolute;
+  background: url(../images/gmap.jpg) center/cover;
+  height: 300px;
+  width: 100%;
+  left: 0;
+  bottom: -200px;
+}
+.footer .card_footer {
+  background: #eee;
+  padding: 50px;
+  position: relative;
+  z-index: 100;
+  max-width: 1063px;
+  margin: 0 auto;
+}
+.footer .card_footer p {
+  font-size: 1rem;
+  color: grey;
+  line-height: 30px;
+}
+.footer .card_footer p img {
+  border-radius: 150px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer .card_footer p i {
+  color: black;
+  vertical-align: 10px;
+  font-size: 0.9rem;
+}
+.footer .card_footer h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 40px 0 20px 0;
+}
+.footer .card_footer h6 {
+  color: rgb(166, 114, 69);
+  font-size: 1rem;
+  font-weight: 500;
 }/*# sourceMappingURL=index.css.map */

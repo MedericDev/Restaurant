@@ -1,4 +1,8 @@
 .section_Events {
+    max-width: 1050px;
+    margin: 30px auto;
+
+
     h3 {
         color: $color1;
         font-family: $font1;
@@ -27,9 +31,7 @@
             "a b"
             "c b"
         ;
-        max-width: 1000px;
-        margin: 30px auto;
-        gap: 20px;
+        gap: 10px;
 
         .grid1 {
             grid-area: c;

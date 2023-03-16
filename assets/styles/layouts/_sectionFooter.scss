@@ -1,0 +1,59 @@
+.footer{
+    position: relative;
+    margin-top: 150px;
+    &::after{
+        content: '';
+        position: absolute;
+        background: url(../images/gmap.jpg) center/cover;
+        height: 300px;
+        width: 100%;
+        left: 0;
+        bottom: -200px;
+    }
+
+
+    .card_footer{
+        background: $white;
+        padding: 50px;
+        position: relative;
+        z-index: 100;
+        max-width: 1063px;
+        margin: 0 auto;
+
+
+        p{
+            font-size: 1rem;
+            color: grey;
+            line-height: 30px;
+
+            img{
+                border-radius: 150px;
+                height: 60px;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            i{
+                color: black;
+                vertical-align: 10px;
+                font-size: 0.9rem;
+
+            }
+        }
+
+        h5{
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 40px 0 20px 0;
+        }
+
+        h6{
+            color: $color1;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+    
+}
