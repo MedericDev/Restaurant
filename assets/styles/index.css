@@ -228,4 +228,99 @@ header .header_Texte img {
   color: rgb(166, 114, 69);
   font-weight: 700;
   font-size: 1.1rem;
+}
+
+.section_Reserved {
+  width: 90%;
+  max-width: 1000px;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.section_Reserved h3 {
+  color: rgb(166, 114, 69);
+  font-family: Allura, cursive;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+.section_Reserved h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: -12px;
+  font-family: Poppins, serif;
+}
+.section_Reserved .reserved_Left {
+  background: #000;
+  color: #eee;
+}
+.section_Reserved .reserved_Left > div {
+  border: 1px dashed rgb(166, 114, 69);
+  margin: 20px;
+  padding: 20px 10px;
+}
+.section_Reserved .reserved_Left > div img {
+  margin: 30px 0 10px 0;
+}
+.section_Reserved .reserved_Left > div .reserved_Date {
+  margin: 20px 0;
+}
+.section_Reserved .reserved_Left > div .reserved_Date h6 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: rgb(166, 114, 69);
+  text-transform: uppercase;
+}
+.section_Reserved .reserved_Left > div .reserved_Date p {
+  margin: 15px 0;
+  font-size: 0.85rem;
+  font-weight: 100;
+}
+.section_Reserved .reserved_Right {
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 0;
+}
+.section_Reserved .reserved_Right h4 {
+  color: #21201e;
+  font-size: 1.5rem;
+}
+.section_Reserved .reserved_Right img {
+  margin: 30px 0;
+}
+.section_Reserved .reserved_Right form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.section_Reserved .reserved_Right form input,
+.section_Reserved .reserved_Right form select {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(182, 182, 182);
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin: 10px;
+  height: 40px;
+  outline: none;
+  padding: 10px;
+}
+.section_Reserved .reserved_Right form button {
+  background: #21201e;
+  color: #eee;
+  border-radius: 50px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 16px 34px;
+  margin-top: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.section_Reserved .reserved_Right form button:hover {
+  transform: translateX(3px);
 }/*# sourceMappingURL=index.css.map */
