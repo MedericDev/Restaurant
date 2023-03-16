@@ -47,6 +47,11 @@
         z-index: 100;
         position: relative;
 
+        @media screen and (max-width: 680px){
+            grid-template-columns: 1fr;
+    
+          }
+
 
         .card_Left,
         .card_Right{

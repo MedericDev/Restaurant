@@ -3,6 +3,11 @@
     grid-template-columns: 1fr 1fr;
     background: $white;
 
+    @media screen and (max-width: 680px){
+        grid-template-columns: 1fr;
+
+      }
+
     .part_Left{
         margin: 15px;
         border: 1px dashed $color1;

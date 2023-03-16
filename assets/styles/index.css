@@ -43,12 +43,22 @@ header .navbar {
   max-width: 1100px;
   margin: 0 auto;
 }
+@media screen and (max-width: 680px) {
+  header .navbar {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 header .navbar .logo {
   color: #eee;
   font-family: Allura, cursive;
   font-size: 2rem;
   font-weight: 100;
   text-align: left;
+}
+@media screen and (max-width: 680px) {
+  header .navbar .logo {
+    text-align: center;
+  }
 }
 header .navbar .navbar_Left {
   display: flex;
@@ -58,6 +68,11 @@ header .navbar .navbar_Left {
   font-size: 0.7rem;
   padding: 0 30px;
 }
+@media screen and (max-width: 680px) {
+  header .navbar .navbar_Left {
+    display: none;
+  }
+}
 header .navbar .navbar_Left li {
   cursor: pointer;
 }
@@ -66,6 +81,12 @@ header .navbar .navbar_Right {
   align-items: center;
   justify-content: space-around;
   font-size: 0.7rem;
+}
+@media screen and (max-width: 680px) {
+  header .navbar .navbar_Right {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 header .navbar .navbar_Right i {
   transition: 0.2s;
@@ -106,6 +127,11 @@ header .header_Texte img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: #eee;
+}
+@media screen and (max-width: 680px) {
+  .section_Overview {
+    grid-template-columns: 1fr;
+  }
 }
 .section_Overview .part_Left {
   margin: 15px;
@@ -192,6 +218,11 @@ header .header_Texte img {
   z-index: 100;
   position: relative;
 }
+@media screen and (max-width: 680px) {
+  .section_Menu .card_Menu {
+    grid-template-columns: 1fr;
+  }
+}
 .section_Menu .card_Menu .card_Left,
 .section_Menu .card_Menu .card_Right {
   margin: 0 20px;
@@ -236,6 +267,11 @@ header .header_Texte img {
   margin: 80px auto;
   display: grid;
   grid-template-columns: 30% 70%;
+}
+@media screen and (max-width: 1030px) {
+  .section_Reserved {
+    grid-template-columns: 1fr;
+  }
 }
 .section_Reserved h3 {
   color: rgb(166, 114, 69);
@@ -296,6 +332,12 @@ header .header_Texte img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
 }
+@media screen and (max-width: 700px) {
+  .section_Reserved .reserved_Right form {
+    grid-template-columns: 1fr;
+    width: 50%;
+  }
+}
 .section_Reserved .reserved_Right form input,
 .section_Reserved .reserved_Right form select {
   background: none;
@@ -307,6 +349,14 @@ header .header_Texte img {
   height: 40px;
   outline: none;
   padding: 10px;
+}
+@media screen and (max-width: 700px) {
+  .section_Reserved .reserved_Right form input,
+  .section_Reserved .reserved_Right form select {
+    margin: 20px 0;
+    padding: 0;
+    width: 100%;
+  }
 }
 .section_Reserved .reserved_Right form button {
   background: #21201e;
@@ -328,6 +378,11 @@ header .header_Texte img {
 .section_Events {
   max-width: 1050px;
   margin: 30px auto;
+}
+@media screen and (max-width: 1100px) {
+  .section_Events {
+    display: none;
+  }
 }
 .section_Events h3 {
   color: rgb(166, 114, 69);
@@ -472,6 +527,11 @@ header .header_Texte img {
   max-width: 1063px;
   margin: 0 auto;
 }
+@media screen and (max-width: 680px) {
+  .section_footer .card_footer {
+    width: 90%;
+  }
+}
 .section_footer .card_footer p {
   font-size: 1rem;
   color: grey;
@@ -508,11 +568,22 @@ footer {
   width: 100%;
   color: #eee;
 }
+@media screen and (max-width: 680px) {
+  footer {
+    background: none;
+    height: 200px;
+  }
+}
 footer .footer_container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1050px;
   margin: 0 auto;
+}
+@media screen and (max-width: 680px) {
+  footer .footer_container {
+    grid-template-columns: 1fr;
+  }
 }
 footer .footer_container .footer_Left {
   display: flex;
@@ -520,6 +591,11 @@ footer .footer_container .footer_Left {
   justify-content: center;
   text-align: left;
   padding-top: 50px;
+}
+@media screen and (max-width: 680px) {
+  footer .footer_container .footer_Left {
+    display: none;
+  }
 }
 footer .footer_container .footer_Left h4 {
   color: rgb(166, 114, 69);
@@ -539,6 +615,11 @@ footer .footer_container .footer_Right {
   text-align: left;
   text-transform: uppercase;
 }
+@media screen and (max-width: 680px) {
+  footer .footer_container .footer_Right {
+    justify-content: center;
+  }
+}
 footer .footer_container .footer_Right .newletter {
   margin: 50px 0 0 30px;
   place-content: center;
@@ -550,6 +631,11 @@ footer .footer_container .footer_Right .newletter input {
   border: 1px solid rgb(66, 66, 66);
   padding: 5px;
   width: 250px;
+}
+@media screen and (max-width: 680px) {
+  footer .footer_container .footer_Right .newletter input {
+    margin-bottom: 20px;
+  }
 }
 footer .footer_container .footer_Right .follow {
   display: flex;

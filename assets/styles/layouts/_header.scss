@@ -9,12 +9,21 @@ header {
         max-width: 1100px;
         margin: 0 auto;
 
+        @media screen and (max-width: 680px){
+            grid-template-columns: 1fr 1fr;
+          }
+
         .logo {
             color: $white;
             font-family: $font1;
             font-size: 2rem;
             font-weight: 100;
             text-align: left;
+
+            @media screen and (max-width: 680px){
+                text-align: center;
+              }
+            
         }
 
         .navbar_Left {
@@ -22,6 +31,10 @@ header {
             text-transform: uppercase;
             font-size: 0.7rem;
             padding: 0 30px;
+
+            @media screen and (max-width: 680px){
+                display: none;
+              }
 
             li {
                 cursor: pointer
@@ -31,6 +44,11 @@ header {
         .navbar_Right {
             @include alignChildren(space-around);
             font-size: 0.7rem;
+
+            @media screen and (max-width: 680px){
+                width: 50%;
+                margin: 0 auto;
+              }
 
             i {
                 transition: .2s;

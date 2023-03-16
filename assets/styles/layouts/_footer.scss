@@ -5,15 +5,30 @@ footer {
     width: 100%;
     color:$white;
 
+    @media screen and (max-width: 680px){
+       background: none;
+       height: 200px;
+      }
+
     .footer_container{
         display: grid;
         grid-template-columns: 1fr 1fr;
         max-width: 1050px;
         margin: 0 auto;
+
+        @media screen and (max-width: 680px){
+            grid-template-columns: 1fr;
+    
+          }
         .footer_Left{
             @include childCenter;
             text-align:left;
             padding-top: 50px;
+
+            @media screen and (max-width: 680px){
+                display: none;
+        
+              }
         h4{
             color: $color1;
             font-family: $font1;
@@ -32,6 +47,12 @@ footer {
             justify-content: space-around;
             text-align: left;
             text-transform: uppercase;
+
+            @media screen and (max-width: 680px){
+                
+            justify-content: center;
+        
+              }
     
             .newletter{
                 margin: 50px 0 0 30px;
@@ -44,6 +65,11 @@ footer {
                     border: 1px solid rgb(66, 66, 66);
                     padding: 5px;
                     width: 250px;
+
+                    @media screen and (max-width: 680px){
+                        margin-bottom: 20px;
+                
+                      }
                 }
             }
             .follow{
